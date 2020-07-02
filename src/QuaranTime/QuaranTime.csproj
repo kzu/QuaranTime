@@ -22,7 +22,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="docfx.console" Version="2.56.0" PrivateAssets="all" />
+    <!-- For now, we just build/push docs updates from local builds -->
+    <PackageReference Include="docfx.console" Version="2.56.0" PrivateAssets="all" Condition="'$(CI)' != 'true'" />
   </ItemGroup>
 
 </Project>
