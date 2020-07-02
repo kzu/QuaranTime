@@ -1,9 +1,0 @@
-{
-  "System": "System.yml",
-  "System.QuaranTime": "System.QuaranTime.yml",
-  "System.QuaranTime.Epoch": "System.QuaranTime.yml",
-  "System.QuaranTime.FromQuaranTimeMilliseconds(System.Int64)": "System.QuaranTime.yml",
-  "System.QuaranTime.FromQuaranTimeSeconds(System.Int64)": "System.QuaranTime.yml",
-  "System.QuaranTime.ToQuaranTimeMilliseconds(System.DateTimeOffset)": "System.QuaranTime.yml",
-  "System.QuaranTime.ToQuaranTimeSeconds(System.DateTimeOffset)": "System.QuaranTime.yml"
-}

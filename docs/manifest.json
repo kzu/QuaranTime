@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "api/System.QuaranTime.html",
-          "hash": "qcIHl2jN2KKC6dU4BmGFQw=="
+          "hash": "ab6HZtd1C4pG9Y+eqkQReg=="
         }
       },
       "is_incremental": false,
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "i2UO4neJ7i5SkuDbbHftrg=="
+          "hash": "m0OW15rMsAfM7O7JNbOpPQ=="
         }
       },
       "is_incremental": false,
@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "qLV9y1E904uEfhhxu/v/aw=="
+          "hash": "Pb0FCjG4PN+f+FVPqo6w7A=="
         }
       },
       "is_incremental": false,
@@ -88,22 +88,21 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Disable incremental build by force rebuild option.",
+        "can_incremental": true,
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "ForceRebuild"
+        "skipped_file_count": 0
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 2,
-          "skipped_file_count": 0
+          "skipped_file_count": 2
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor ManagedReferenceDocumentProcessor disable incremental build because last build doesn't contain version .",
           "incrementalPhase": "build",
           "total_file_count": 2,
           "skipped_file_count": 0

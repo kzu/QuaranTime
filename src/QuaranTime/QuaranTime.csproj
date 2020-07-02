@@ -16,6 +16,9 @@
 
   <PropertyGroup Label="docfx">
     <DocfxConfigFile>../../docfx.json</DocfxConfigFile>
+    <MetadataOutputFolder>../..</MetadataOutputFolder>
+    <PreviewOutputFolder>../../docs</PreviewOutputFolder>
+    <LogFile>obj/docfx.log</LogFile>
   </PropertyGroup>
 
   <ItemGroup>
