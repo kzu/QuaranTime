@@ -5,6 +5,10 @@ describing a point in time relative to the Unix epoch, **QuaranTime** (from
 *quarantine time*) is also a way to represent time relative to the beginning 
 of a [specific quarantine lockdown](https://en.wikipedia.org/wiki/COVID-19_pandemic_in_Argentina#Mandatory_lockdown).
 
+[![Build Status](https://github.com/kzu/QuaranTime/workflows/build/badge.svg)](https://github.com/kzu/QuaranTime/actions)
+[![Version](https://img.shields.io/nuget/vpre/QuaranTime.svg)](https://www.nuget.org/packages/QuaranTime)
+
+
 ## Why 
 
 The Unix epoch, being 1 January 1970, happened a "long" time ago and therefore 
