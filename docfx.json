@@ -29,20 +29,10 @@
         ]
       }
     ],
-    "overwrite": [
-      {
-        "files": [
-          "docs/**.md"
-        ],
-        "exclude": [
-          "_site/**"
-        ]
-      }
-    ],
     "globalMetadata": {
       "_appTitle": "QuaranTime",
       "_enableSearch": true
     },
-    "dest": "_site"
+    "dest": "docs"
   }
 }

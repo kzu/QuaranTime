@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>QuaranTime | QuaranTime </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="QuaranTime | QuaranTime ">
+    <meta name="generator" content="docfx 2.56.0.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="quarantime">QuaranTime</h1>
+
+<p>Just like <a href="https://en.wikipedia.org/wiki/Unix_time">Unix time</a> is a system for 
+describing a point in time relative to the Unix epoch, <strong>QuaranTime</strong> (from 
+<em>quarantine time</em>) is also a way to represent time relative to the beginning 
+of a <a href="https://en.wikipedia.org/wiki/COVID-19_pandemic_in_Argentina#Mandatory_lockdown">specific quarantine lockdown</a>.</p>
+<h2 id="why">Why</h2>
+<p>The Unix epoch, being 1 January 1970, happened a &quot;long&quot; time ago and therefore 
+seconds (and even moreso milliseconds) from it are already fairly large numbers 
+(currently, 10 and 13 digits respectively). By comparison, in Quarantine epoch 
+they are 3 digits shorter currently. </p>
+<p>But moreover, since the COVID-19 epoch will likely be remembered far more vividly 
+by current and future generations, it seems like a great opportunity to adopt a 
+more easily relatable epoch.</p>
+<p>The chosen date for the <strong>QuaranTime</strong> epoch is 3 March 2020 (2020-03-20) GMT-0300 
+for a couple reasons: </p>
+<ul>
+<li>It&#39;s very easy to remember (20/03/20) </li>
+<li>I&#39;m from Argentina ¯_(ツ)_/¯</li>
+</ul>
+<h2 id="how">How</h2>
+<p>Install the <a href="https://nuget.org/packages/QuaranTime">package</a>:</p>
+<pre><code>Install-Package QuaranTime
+</code></pre><p>Use the provided extension methods:</p>
+<pre><code class="lang-csharp">long seconds = DateTimeOffset.Now.ToQuaranTimeSeconds();
+long milliseconds = DateTimeOffset.Now.ToQuaranTimeMilliseconds();
+</code></pre><p>And to get the <code>DateTimeOffset</code>:</p>
+<pre><code class="lang-csharp">DateTimeOffset fromSecs = QuaranTime.ToQuaranTimeSeconds(seconds);
+DateTimeOffset fromMilliSecs = QuaranTime.FromQuaranTimeMilliseconds(milliseconds);
+</code></pre><p>You can also directly access the constant <code>QuaranTime.Epoch</code> value.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/kzu/Quarantime/blob/main/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

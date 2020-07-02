@@ -33,7 +33,7 @@ Use the provided extension methods:
 
 ```csharp
 long seconds = DateTimeOffset.Now.ToQuaranTimeSeconds();
-long milliseconds = DateTimeOffset.Now.ToUnixTimeMilliseconds();
+long milliseconds = DateTimeOffset.Now.ToQuaranTimeMilliseconds();
 ```
 
 And to get the `DateTimeOffset`:
