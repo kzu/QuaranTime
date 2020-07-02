@@ -1,0 +1,48 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "src/QuaranTime/*.csproj"
+          ] 
+        }
+      ],
+      "dest": "api",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "api/**.yml",
+          "api/index.md",
+          "toc.yml"
+        ]
+      },
+      {
+        "files": [
+          "*.md",
+          "toc.yml"
+        ]
+      }
+    ],
+    "overwrite": [
+      {
+        "files": [
+          "docs/**.md"
+        ],
+        "exclude": [
+          "_site/**"
+        ]
+      }
+    ],
+    "globalMetadata": {
+      "_appTitle": "QuaranTime",
+      "_enableSearch": true
+    },
+    "dest": "_site"
+  }
+}

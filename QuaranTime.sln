@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30223.230
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuaranTime", "src\QuaranTime\QuaranTime.csproj", "{45074CC4-0D7E-47F7-867D-B5BAD1FA5ECA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuaranTime.Tests", "src\QuaranTime.Tests\QuaranTime.Tests.csproj", "{2435895D-CD95-49E5-AEBD-9FD70E16031F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F5A80F59-0118-4348-9681-7A3EF0C7E8DA}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		.github\workflows\build.yml = .github\workflows\build.yml
+		docfx.json = docfx.json
+		index.md = index.md
+		toc.yml = toc.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45074CC4-0D7E-47F7-867D-B5BAD1FA5ECA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45074CC4-0D7E-47F7-867D-B5BAD1FA5ECA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45074CC4-0D7E-47F7-867D-B5BAD1FA5ECA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45074CC4-0D7E-47F7-867D-B5BAD1FA5ECA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2435895D-CD95-49E5-AEBD-9FD70E16031F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2435895D-CD95-49E5-AEBD-9FD70E16031F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2435895D-CD95-49E5-AEBD-9FD70E16031F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2435895D-CD95-49E5-AEBD-9FD70E16031F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9D0EC108-723B-4E79-B6B7-E9A0E55C0BD1}
+	EndGlobalSection
+EndGlobal
