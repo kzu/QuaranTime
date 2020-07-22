@@ -23,6 +23,7 @@ more easily relatable epoch.
 The chosen date for the **QuaranTime** epoch is 3 March 2020 (2020-03-20) GMT-0300 
 for a couple reasons: 
 * It's very easy to remember (20/03/20) 
+* Even the timezone is easy to remember since it's the same as the month (-03hrs)
 * I'm from Argentina ¯\_(ツ)_/¯
 
 ## How
