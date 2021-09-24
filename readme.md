@@ -5,8 +5,32 @@ describing a point in time relative to the Unix epoch, **QuaranTime** (from
 *quarantine time*) is also a way to represent time relative to the beginning 
 of a [specific quarantine lockdown](https://en.wikipedia.org/wiki/COVID-19_pandemic_in_Argentina#Mandatory_lockdown).
 
-[![Build Status](https://github.com/kzu/QuaranTime/workflows/build/badge.svg)](https://github.com/kzu/QuaranTime/actions)
-[![Version](https://img.shields.io/nuget/vpre/QuaranTime.svg)](https://www.nuget.org/packages/QuaranTime)
+> NOTE: this repo and its package has been deprecated in favor of the corresponding 
+> :cat: at https://github.com/devlooped/catbag/blob/main/System/QuaranTime.cs
+
+Install:
+
+```
+> dotnet file add https://github.com/devlooped/catbag/blob/main/System/QuaranTime.cs
+```
+
+## Usage
+
+Use the provided extension methods:
+
+```csharp
+long seconds = DateTimeOffset.Now.ToQuaranTimeSeconds();
+long milliseconds = DateTimeOffset.Now.ToQuaranTimeMilliseconds();
+```
+
+And to get the `DateTimeOffset`:
+
+```csharp
+DateTimeOffset fromSecs = QuaranTime.ToQuaranTimeSeconds(seconds);
+DateTimeOffset fromMilliSecs = QuaranTime.FromQuaranTimeMilliseconds(milliseconds);
+```
+
+You can also directly access the constant `QuaranTime.Epoch` value.
 
 
 ## Why 
@@ -25,27 +49,3 @@ for a couple reasons:
 * It's very easy to remember (20/03/20) 
 * Even the timezone is easy to remember since it's the same as the month (-03hrs)
 * I'm from Argentina ¯\_(ツ)_/¯
-
-## How
-
-Install the [package](https://nuget.org/packages/QuaranTime):
-
-```
-Install-Package QuaranTime
-```
-
-Use the provided extension methods:
-
-```csharp
-long seconds = DateTimeOffset.Now.ToQuaranTimeSeconds();
-long milliseconds = DateTimeOffset.Now.ToQuaranTimeMilliseconds();
-```
-
-And to get the `DateTimeOffset`:
-
-```csharp
-DateTimeOffset fromSecs = QuaranTime.ToQuaranTimeSeconds(seconds);
-DateTimeOffset fromMilliSecs = QuaranTime.FromQuaranTimeMilliseconds(milliseconds);
-```
-
-You can also directly access the constant `QuaranTime.Epoch` value.
