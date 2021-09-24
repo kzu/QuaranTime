@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "api/System.QuaranTime.html",
-          "hash": "NXzkj4ertjzbtOH9oCwzDA=="
+          "hash": "ab6HZtd1C4pG9Y+eqkQReg=="
         }
       },
       "is_incremental": false,
@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/System.html",
-          "hash": "0CtrCe8QmELh2lXpQ/InEg=="
+          "hash": "SegFWgDbcbKpnnJxmLPITw=="
         }
       },
       "is_incremental": false,
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "MggAZva61qi4fQ/w5mLYLg=="
+          "hash": "m0OW15rMsAfM7O7JNbOpPQ=="
         }
       },
       "is_incremental": false,
@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "zAEjp0I2Xiui6JgIvZRo4Q=="
+          "hash": "q/sai6E2OWkbCOsEYZlggw=="
         }
       },
       "is_incremental": false,
@@ -88,25 +88,23 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Disable incremental build by force rebuild option.",
+        "can_incremental": true,
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "ForceRebuild"
+        "skipped_file_count": 0
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 2,
-          "skipped_file_count": 0
+          "skipped_file_count": 2
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 2,
-          "skipped_file_count": 0
+          "skipped_file_count": 2
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
